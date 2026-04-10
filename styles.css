@@ -23,7 +23,7 @@ body {
   color: var(--color-dark);
   background: var(--color-white);
   line-height: 1.7;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 img { display: block; max-width: 100%; height: auto; }
@@ -137,8 +137,8 @@ ul { list-style: none; }
 .home-content { position: relative; z-index: 1; max-width: 780px; margin: auto; }
 
 .home-logo-wrap {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   border-radius: 16px;
   background: rgba(255,255,255,0.06);
   border: 2px dashed rgba(0,26,77,0.5);
@@ -317,7 +317,7 @@ ul { list-style: none; }
   width: 100%;
   aspect-ratio: 4/3;
   border-radius: 8px;
-  background: #ddd;
+  background: transparent;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -453,8 +453,7 @@ ul { list-style: none; }
 /* ── Gallery ──────────────────────── */
 #gallery { background: #2c3e50; }
 
-#gallery .section-title { color: var(--color-white); }
-#gallery .section-desc { color: #aaa; }
+#gallery .section-label { color: white; }
 
 .gallery-grid {
   display: grid;
