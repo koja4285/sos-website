@@ -3,7 +3,7 @@
    =========================== */
 
 :root {
-  --color-primary: #0077be;   /* lighter navy blue */
+  --color-primary: #09132F;   /* lighter navy blue */
   --color-dark:    #2c3e50;   /* grey-navy */
   --color-mid:     #7f8c8d;   /* grey */
   --color-light:   #ecf0f1;   /* light grey */
@@ -23,6 +23,7 @@ body {
   color: var(--color-dark);
   background: var(--color-white);
   line-height: 1.7;
+  font-size: 18px;
 }
 
 img { display: block; max-width: 100%; height: auto; }
