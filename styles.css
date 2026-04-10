@@ -448,7 +448,6 @@ ul { list-style: none; }
 #gallery { background: var(--color-dark); }
 
 #gallery .section-title { color: var(--color-white); }
-#gallery .section-label { }
 #gallery .section-desc { color: #aaa; }
 
 .gallery-grid {
