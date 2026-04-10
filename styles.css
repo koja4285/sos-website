@@ -109,12 +109,12 @@ ul { list-style: none; }
   border-radius: 4px;
 }
 
-.nav-cta:hover { background: #c94008; color: var(--color-white) !important; }
+.nav-cta:hover { background: #000d26; color: var(--color-white) !important; }
 
 /* ── Hero ─────────────────────────── */
 #hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 60%, #3a1800 100%);
+  background: linear-gradient(135deg, #0a1a33 0%, #1a2d4d 60%, #001a4d 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,8 +128,8 @@ ul { list-style: none; }
   position: absolute;
   inset: 0;
   background-image:
-    repeating-linear-gradient(45deg, rgba(232,80,10,0.04) 0px, rgba(232,80,10,0.04) 1px, transparent 1px, transparent 40px),
-    repeating-linear-gradient(-45deg, rgba(232,80,10,0.04) 0px, rgba(232,80,10,0.04) 1px, transparent 1px, transparent 40px);
+    repeating-linear-gradient(45deg, rgba(0,26,77,0.04) 0px, rgba(0,26,77,0.04) 1px, transparent 1px, transparent 40px),
+    repeating-linear-gradient(-45deg, rgba(0,26,77,0.04) 0px, rgba(0,26,77,0.04) 1px, transparent 1px, transparent 40px);
   pointer-events: none;
 }
 
@@ -140,7 +140,7 @@ ul { list-style: none; }
   height: 140px;
   border-radius: 16px;
   background: rgba(255,255,255,0.06);
-  border: 2px dashed rgba(232,80,10,0.5);
+  border: 2px dashed rgba(0,26,77,0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -215,7 +215,7 @@ ul { list-style: none; }
   transition: background var(--transition), transform var(--transition);
 }
 
-.btn-primary:hover { background: #c94008; transform: translateY(-2px); }
+.btn-primary:hover { background: #000d26; transform: translateY(-2px); }
 
 .btn-outline {
   border: 2px solid rgba(255,255,255,0.25);
@@ -357,7 +357,7 @@ ul { list-style: none; }
   color: var(--color-white);
   font-family: var(--font-heading);
   text-align: center;
-  box-shadow: 0 4px 20px rgba(232,80,10,0.4);
+  box-shadow: 0 4px 20px rgba(0,26,77,0.4);
 }
 
 .about-badge-num {
@@ -425,7 +425,7 @@ ul { list-style: none; }
 .service-icon {
   width: 56px;
   height: 56px;
-  background: rgba(232,80,10,0.12);
+  background: rgba(0,26,77,0.12);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -494,7 +494,7 @@ ul { list-style: none; }
   transition: background var(--transition);
 }
 
-.gallery-item:hover .gallery-overlay { background: rgba(232,80,10,0.15); }
+.gallery-item:hover .gallery-overlay { background: rgba(0,26,77,0.15); }
 
 .gallery-placeholder {
   display: flex;
@@ -592,7 +592,7 @@ ul { list-style: none; }
 .contact-icon {
   width: 48px;
   height: 48px;
-  background: rgba(232,80,10,0.1);
+  background: rgba(0,26,77,0.1);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -669,7 +669,7 @@ ul { list-style: none; }
   transition: background var(--transition), transform var(--transition);
 }
 
-.btn-submit:hover { background: #c94008; transform: translateY(-2px); }
+.btn-submit:hover { background: #000d26; transform: translateY(-2px); }
 
 /* ── Footer ───────────────────────── */
 #footer {
