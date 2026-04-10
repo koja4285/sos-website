@@ -3,7 +3,7 @@
    =========================== */
 
 :root {
-  --color-primary: #9B9CA3;   /* lighter navy blue */
+  --color-primary: #1F2F56;   /* lighter navy blue */
   --color-dark:    #2c3e50;   /* grey-navy */
   --color-mid:     #7f8c8d;   /* grey */
   --color-light:   #ecf0f1;   /* light grey */
@@ -151,8 +151,8 @@ ul { list-style: none; }
 }
 
 .home-logo-wrap img {
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 200%;
   object-fit: contain;
 }
 
