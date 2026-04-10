@@ -3,7 +3,7 @@
    =========================== */
 
 :root {
-  --color-primary: #001a4d;   /* navy blue */
+  --color-primary: #2563eb;   /* lighter navy blue */
   --color-dark:    #2c3e50;   /* grey-navy */
   --color-mid:     #7f8c8d;   /* grey */
   --color-light:   #ecf0f1;   /* light grey */
@@ -310,6 +310,7 @@ ul { list-style: none; }
 
 .about-image-wrap {
   position: relative;
+  max-width: 300px;
 }
 
 .about-image {
@@ -583,7 +584,7 @@ ul { list-style: none; }
 #contact .section-label { color: var(--color-primary); }
 #contact .section-title { color: var(--color-dark); }
 
-.contact-info { display: flex; flex-direction: column; gap: 28px; }
+.contact-info { display: flex; flex-direction: column; gap: 20px; }
 
 .contact-item {
   display: flex;
