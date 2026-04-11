@@ -23,7 +23,7 @@ body {
   color: var(--color-dark);
   background: var(--color-white);
   line-height: 1.7;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 img { display: block; max-width: 100%; height: auto; }
@@ -137,38 +137,83 @@ ul { list-style: none; }
 .home-content { position: relative; z-index: 1; max-width: 780px; margin: auto; }
 
 .home-logo-wrap {
-  width: 300px;
-  height: 300px;
+  width: 220px;
+  height: 220px;
   border-radius: 16px;
   background: rgba(255,255,255,0.06);
   border: 2px dashed rgba(0,26,77,0.5);
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   margin: 0 auto 36px;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
+
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+/* bigger hover zone */
+.home-logo-wrap::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+}
+
+/* glow overlay */
+.home-logo-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.2), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
 }
 
 .home-logo-wrap img {
-  width: 300%;
-  height: 300%;
+  width: 220%;
+  height: 220%;
   object-fit: contain;
+  transition: transform 0.25s ease, filter 0.25s ease;
 }
 
-.home-logo-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  color: rgba(255,255,255,0.35);
-  font-size: 0.75rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+/* hover effect */
+.home-logo-wrap:hover {
+  transform: scale(1.08);
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.8);
+  box-shadow: 0 0 30px rgba(255,255,255,0.2);
 }
 
-.home-logo-placeholder svg { opacity: 0.4; }
+.home-logo-wrap:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.home-logo-wrap:hover::after {
+  opacity: 1;
+}
+
+/* click vibration */
+.home-logo-wrap:active {
+  animation: logo-vibrate 0.18s linear;
+}
+
+@keyframes logo-vibrate {
+  0%   { transform: scale(1.05) translate(0,0); }
+  25%  { transform: scale(1.05) translate(-2px,1px); }
+  50%  { transform: scale(1.05) translate(2px,-1px); }
+  75%  { transform: scale(1.05) translate(-1px,1px); }
+  100% { transform: scale(1.08) translate(0,0); }
+}
 
 .home-tagline {
   display: inline-block;
