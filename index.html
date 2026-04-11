@@ -15,6 +15,16 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<script>
+const logo = document.querySelector(".home-logo-wrap");
+const text = document.querySelector(".call-text");
+
+logo.addEventListener("click", () => {
+  text.classList.remove("expand");
+  void text.offsetWidth;
+  text.classList.add("expand");
+});
+</script>
 
   <!-- ══════════════════════════════════════
        NAVIGATION
@@ -43,13 +53,11 @@
     <div class="home-content">
 
       <div class="home-logo-wrap">
-        <img src="assets/images/logo.png" alt="SOS Construction logo" />
-      </div>
 
       <span class="home-tagline">Licensed &amp; Insured</span>
 
       <h1 class="home-title">
-        Need Help?<br><span>Call SOS!</span>
+        Need Help?<br><span class="call-text">Call SOS!</span>
       </h1>
 
       <p class="home-subtitle">
