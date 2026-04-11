@@ -38,6 +38,15 @@
   <!-- ══════════════════════════════════════
        MAIN
   ═══════════════════════════════════════ -->
+  <script>
+document.querySelector(".home-logo-wrap").onclick = function () {
+  const text = document.querySelector(".call-text");
+  text.classList.remove("jump");
+  void text.offsetWidth; // restart animation
+  text.classList.add("jump");
+};
+</script>
+
   <section id="home">
     <div class="home-bg-pattern"></div>
     <div class="home-content">
@@ -48,8 +57,10 @@
       <span class="home-tagline">Licensed &amp; Insured</span>
 
      <h1 class="home-title">
-        Need Help?<br><span>Call SOS!</span>
-      </h1>
+  Need Help?<br><span class="call-text">Call SOS!</span>
+</h1>
+
+<div class="home-logo-wrap"></div>
 
       <p class="home-subtitle">
         SOS Construction delivers high-quality residential, commercial, and industrial projects on time and within budget. From foundations to finishes — we build it right.

@@ -113,6 +113,20 @@ ul { list-style: none; }
 .nav-cta:hover { background: #000d26; color: var(--color-white) !important; }
 
 /* ── Home ─────────────────────────── */
+.call-text {
+  display: inline-block;
+}
+
+.call-text.jump {
+  animation: jump 0.4s ease;
+}
+@keyframes jump {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-15px); }
+  60%  { transform: translateY(5px); }
+  100% { transform: translateY(0); }
+}
+
 #home {
   min-height: 100vh;
   background: linear-gradient(135deg, #001a4d 0%, #2c3e50 50%, #34495e 100%);
